@@ -18,6 +18,6 @@ mem->parent = parent;
 mem->left = NULL;
 mem->right = NULL;
 mem->n = value;
-free(mem);
+
 return (mem);
 }
