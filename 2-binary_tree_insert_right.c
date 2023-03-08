@@ -4,7 +4,7 @@
  * binary_tree_insert_right - Inserting a node to the right
  * @parent: The parent node
  * @value: The data for the node
- * If the parent has a right child, the child should be made the
+ * If the parent has a right child, the child should be made thie
  * subchild and the new child be made the direct child of the parent
  *
  * Return: Always (0);
@@ -16,7 +16,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 if (parent == NULL)
 return (NULL);
 
-tree *num;
+binary_tree_t *num;
 num = binary_tree_node(parent, value);
 
 if (parent->right != NULL)
