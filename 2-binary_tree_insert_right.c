@@ -25,4 +25,5 @@ num->right = parent->right;
 parent->right = num;
 }
 parent->right = num;
+return (num);
 }
