@@ -17,14 +17,14 @@ if (parent == NULL)
 return (NULL);
 
 num = binary_tree_node(parent, value);
-if (new == NULL)
+if (num == NULL)
 	return (NULL);
 
 if (parent->right != NULL)
 {
 num->right = parent->right;
-parent->right = num;
-}
 parent->right->parent = num;
+}
+parent->right = num;
 return (num);
 }
