@@ -24,6 +24,6 @@ if (parent->right != NULL)
 num->right = parent->right;
 parent->right = num;
 }
-parent->right = num;
+parent->right->parent = num;
 return (num);
 }
