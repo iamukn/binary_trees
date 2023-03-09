@@ -16,7 +16,7 @@ if (tree == NULL)
 if (tree)
 {
 size += 1;
-binary_tree_size(tree->left);
-binary_tree_size(tree->right);
+size += binary_tree_size(tree->left);
+aize += binary_tree_size(tree->right);
 }
 }
