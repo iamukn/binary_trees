@@ -12,9 +12,7 @@ binary_tree_t *root;
 root = node;
 if (root == NULL)
 	return (0);
-if (root->left == NULL && root->right == NULL)
-	return (1);
-root->left;
-root->right;
-return (0);
+if (root->left != NULL || root->right != NULL)
+	return (0);
+return (1);
 }
