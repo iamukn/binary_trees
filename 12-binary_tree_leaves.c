@@ -15,5 +15,6 @@ if (tree == NULL)
 if (tree->left != NULL || tree->right != NULL)
 {
 count += 1;
-
+}
+return (count);
 }
