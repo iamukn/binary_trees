@@ -18,5 +18,4 @@ func(tree->n);
 binary_tree_preorder(tree->left, func);
 binary_tree_preorder(tree->right, func);
 }
-return (0);
 }
