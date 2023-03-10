@@ -15,8 +15,8 @@ if (tree == NULL)
 if (tree)
 {
 count += tree->left == NULL && tree->right == NULL ? 1 : 0;
-binary_tree_leaves(tree->left);
-binary_tree_leaves(tree->right);
+count += binary_tree_leaves(tree->left);
+count += binary_tree_leaves(tree->right);
 }
 return (count);
 }
