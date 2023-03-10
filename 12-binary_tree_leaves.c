@@ -12,9 +12,11 @@ size_t count = 0;
 
 if (tree == NULL)
 	return (0);
-if (tree->left != NULL || tree->right != NULL)
+if (tree)
 {
-count += 1;
+count += tree->left == NULL && tree->right == NULL ? 1 : 0;
+binary_tree_leaves(tree->left);
+binary_tree_leaves(tree->right);
 }
 return (count);
 }
